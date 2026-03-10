@@ -1,16 +1,9 @@
-# Introdução a matéria 
-
-Introdução à matéria de Desenvolvimento Web III  
-12/02/2026
-[[WebIII01.pdf]]
-
----
 ## Desenvolvimento Web III
 
-Componente Curricular: Desenvolvimento Web III  
-Semestre: 3º  
-Carga horária: 80h (67h relógio)
-Professor: Jefferson Chaves.
+**Componente Curricular:** Desenvolvimento Web III  
+**Semestre**: 3º  
+**Carga horária**: 80h (67h relógio)
+**Professor**: Jefferson Chaves.
 
 ---
 
@@ -38,3 +31,5 @@ Aprofundar o desenvolvimento de sistemas web utilizando:
 ---
 
 [[Arquitetura da Web e Protocolo HTTP]]
+
+
