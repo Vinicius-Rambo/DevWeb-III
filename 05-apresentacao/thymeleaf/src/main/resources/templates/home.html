@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card-container{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            width: 20%;
+            height: 80%;
+            border: solid #000 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Home page</h1>
+    
+    <span>Turma: </span>
+    <p th:text="${turma}"></p> <!--Biding com Controller, recebe o valor turma-->
+    
+    <span>Ano: </span>
+    <p th:text="${ano}"></p>
+
+    <h1>Pessoas</h1>
+
+    <div class="card-container">
+        
+        <div th:each="nome : ${lista}" class="card"> <!--Foreach do Thymeleaf-->
+                
+            <p th:text="${nome}"> </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
