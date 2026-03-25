@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Todo List</h1>
+
+    <div class="cadastrar">
+        <form th:action="@{/add}" method="post"> <!--Usando a rota dinamica @-->
+            <input type="text" name="tarefa">
+            <br><br>
+            <input type="date" name="dataLimite" id="">
+            <button type="submit">novo</button>
+        </form>
+
+    </div>
+
+    <ul>
+        <li th:each="tarefa : ${listaTarefas}">
+            <span th:text="${tarefa.id}" ></span>
+            <span th:text="${tarefa.tarefa}" ></span> <!--o Timeleave chama diretamente o GetTarefa apenas escrevendo tarefa.tarefa-->
+            <span th:text="${tarefa.estado.descricao}" ></span>
+            <span th:text="${tarefa.dataLimite}" ></span>
+
+            <a th:href="@{/alterar_estado/{id} (id = ${tarefa.id}) }">alterar estado</a>
+            <a th:href="@{/apagar/{id} (id = ${tarefa.id}) }">remover</a>
+        </li>
+    </ul>
+    
+</body>
+</html>
