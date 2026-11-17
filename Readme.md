@@ -28,8 +28,5 @@ Aprofundar o desenvolvimento de sistemas web utilizando:
 - Sessão e cookies
 - Serialização de objetos
 
----
-
-[[Arquitetura da Web e Protocolo HTTP]]
 
 
